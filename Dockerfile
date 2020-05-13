@@ -4,7 +4,7 @@ MAINTAINER Chris Krahe
 
 ENV MONGO_INITDB_DATABASE=geo
 ENV MONGO_INITDB_ROOT_USERNAME=admin
-ENV MONGO_INITDB_ROOT_PASSWORD=mongo
+ENV MONGO_INITDB_ROOT_PASSWORD=******
 
 COPY ./seed/data/places.json /var/tmp/seed/
 COPY ./seed/docker.sh /docker-entrypoint-initdb.d/seed.sh

@@ -1,7 +1,7 @@
 db.createUser(
     {
         user: "appUser",
-        pwd: "mongo",
+        pwd: "******",
         roles: [
             { role: "readWrite", db: "geo" }
         ]
