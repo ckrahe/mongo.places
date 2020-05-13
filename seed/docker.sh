@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-mongoimport --db=geo --collection=places --file="data/places.json"
+mongoimport --db=geo --collection=places --file="/var/tmp/seed/places.json"
