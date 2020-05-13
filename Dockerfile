@@ -2,6 +2,5 @@ FROM mongo:latest
 
 MAINTAINER Chris Krahe
 
-COPY ./data/places.json /var/tmp/places.json
-
-RUN  mongoimport --db=geo --collection=places --file=/var/tmp/places.json
+COPY ./seed/data/places.json /docker-entrypoint-initdb.d/data
+COPY ./seed/docker.sh /docker-entrypoint-initdb.d/seed.sh
